@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo Dõi Đơn Hàng</title>
+    <link rel="stylesheet" href="./css/order-tracking.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo.png" alt="Store Logo"></a>
+        </div>
+        <div class="menu">
+            <li><a href="anta.html">Anta</a></li>
+            <li><a href="lining.html">Li-Ning</a></li>
+            <li><a href="peak.html">Peak</a></li>
+        </div>
+    </header>
+
+    <main>
+        <h1>Theo Dõi Đơn Hàng</h1>
+        <section class="order-search">
+            <form id="order-form">
+                <label for="name">Họ tên:</label>
+                <input type="text" id="name" placeholder="Nhập họ tên" required>
+                
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+                
+                <button type="submit">Tìm kiếm</button>
+            </form>
+        </section>
+
+        <!-- This is the section where order details will be displayed -->
+        <section id="order-details" style="display:none;">
+            <h2>Thông tin đơn hàng</h2>
+            <div id="order-list"></div> <!-- Dynamic content will go here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at <a href="mailto:2251120303@ut.edu.vn">2251120303@ut.edu.vn</a></p>
+    </footer>
+
+    <script src="./js/order-tracking.js"></script>
+</body>
+</html>

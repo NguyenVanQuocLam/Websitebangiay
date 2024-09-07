@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Shoes - Delivery</title>
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo.png" alt="store-logo"></a>
+        </div>
+        <div class="menu">
+            <li><a href="anta.html">Anta</a></li>
+            <li><a href="lining.html">Li-Ning</a></li>
+            <li><a href="peak.html">Peak</a></li>
+<li><a href="order-tracking.html">Đơn hàng</a></li>
+            <li><a href="#footer">Liên hệ</a></li>
+        </div>
+        <div class="others">
+            <li><input id="search-bar" placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li><a href="cart.html" class="fas fa-shopping-cart"></a></li>
+            <!--<li><a class="fa fa-user"></a></li>-->
+        </div>
+    </header>
+
+    <main>
+        <section class="delivery">
+            <div class="container">
+                <div class="delivery-top-wrap">
+                    <div class="delivery-top">
+                        <div class="delivery-top-cart delivery-top-item">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="delivery-top-address delivery-top-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="delivery-top-payment delivery-top-item">
+                            <i class="fas fa-money-check-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="delivery-content">
+                    <div class="delivery-content-left">
+                        <p>Vui lòng chọn địa chỉ giao hàng</p>
+                        <div class="delivery-content-left-input-top row">
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="full-name">Họ tên <span>*</span></label>
+                                <input type="text" id="full-name" required>
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="phone">Điện thoại <span>*</span></label>
+                                <input type="number" id="phone" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="city">Tỉnh/Thành phố <span>*</span></label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="district">Quận/Huyện <span>*</span></label>
+                                <input type="text" id="district" required>
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="ward">Phường/Xã <span>*</span></label>
+                                <input type="text" id="ward" required>
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="address">Địa chỉ <span>*</span></label>
+                                <input type="text" id="address" required>
+                            </div>
+                        </div>
+                        <div class="delivery-content-left-button">
+                            <button id="checkout-button"><p>THANH TOÁN VÀ GIAO HÀNG</p></button>
+                        </div>
+                    </div>
+                    <div id="payment-methods-right" style="display:none;">
+                        <h3>Phương thức thanh toán</h3>
+                        <div>
+                            <input type="radio" id="cash" name="payment-method" value="cash">
+                            <label for="cash">Tiền mặt</label><br>
+                            <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                            <label for="bank-transfer">Quét mã QR</label>
+                        </div>
+                        <div id="qr-code" style="display:none; text-align:center; margin-top:20px;">
+                            <img src="images/qrpay.jpg" alt="QR Code">
+                        </div>
+                        <div id="total-amount">
+                            <h4>Tổng giá trị đơn hàng: <span id="order-total">0</span>đ</h4>
+                        </div>
+                        <div id="success-message" style="display:none; text-align:center; margin-top:20px;">
+                            <h4>Thanh toán thành công!</h4>
+                        </div>
+                        <div class="payment-buttons" style="text-align:center; margin-top:20px;">
+                            <button id="pay-button"><p>THANH TOÁN</p></button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="Store Logo"></a>
+            </div>
+            <div class="footer-contact">
+                <p><strong>Liên hệ với chúng tôi:</strong></p>
+                <p>Điện thoại: <a href="tel:+84396188326">+84 396 188 326</a></p>
+                <p>Email: <a href="mailto:2251120303@ut.edu.vn">2251120303@ut.edu.vn</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/teddy.lam.04/" target="_blank">facebook.com/teddy.lam.04/</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/delivery.js"></script>
+</body>
+</html>
